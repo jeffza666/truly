@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Kanit, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+body{
+    background:#f5f5f5;
+    padding-top: 4vw;
+    
+}
+.wrap {
+    margin-top: 30px;
+    background: #fff;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    margin: 20px 0px;
+    display: flex;
+}
+.img-product{
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details{
+    margin-left: 20px;
+}
+.head{
+    font-size: 2vw;
+}
+.ddt{
+    font-size: 1.2vw;
+    opacity: 0.5;
+}
+
+.count{
+    font-size: 1.2vw;
+}
+
+.state{
+    font-size: 1.2vw;
+}
+.botre{
+    display: flex;
+    justify-content: flex-end;
+}
+.wrap-item{
+    border-top: 1px solid #ccc6c6; 
+    border-bottom: 1px solid #ccc6c6;
+    padding: 15px;
+}
+.stars i {
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.stars i.active {
+    color: #ff9c1a;
+}
+
+.wrap-rating .fa-star {
+    color: #ff9c1a; 
+    margin-left: 10px;
+    font-size: 1.3vw;
+    margin-top: 2px;
+}
+.wrap-rating{
+    display: flex;
+}
+.wrap-rating p{
+    font-size: 1.3vw;
+}
+.wrap-comment p{
+    font-size: 0.9vw;
+}
+.comment-box {
+    background-color: #f0f0f0; /* สีพื้นหลังของกล่อง */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    padding: 10px; /* การเว้นระยะของเนื้อหาภายในกล่อง */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างของกล่อง */
+    border-radius: 5px; /* มุมของกล่อง */
+}
+.wrap-comment {
+    margin-left: 30px;
+    max-height: 258px;
+    overflow: auto;
+}
+.wrap-comment::-webkit-scrollbar {
+    display: none;
+}
+
+
+.wrap-comment::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+
+
+

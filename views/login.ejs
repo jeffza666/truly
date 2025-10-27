@@ -1,0 +1,28 @@
+<%- include('partials/head_lg.ejs') %>
+    
+
+<nav>
+    <a href="/"><img src="img/nav/TL.png" alt="logo"></a>
+</nav>
+<div class="form-wrapper">
+    <h2>Sign In</h2>
+    <form action="#">
+        <div class="form-control">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+        <div class="form-control">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+        <button type="submit">Sign In</button>
+        <div class="form-help"> 
+            <a href="#">Need help?</a>
+        </div>
+    </form>
+    <p>New to Account? <a href="/Register">Sign up now</a></p>
+</div>
+
+
+
+ <%- include('partials/footer.ejs') %>

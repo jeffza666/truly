@@ -1,0 +1,255 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 4vw;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333; /* สีของข้อความ */
+    font-size: 36px; /* ขนาดตัวอักษร */
+    text-align: center; /* การจัดวางตำแหน่งข้อความให้อยู่กึ่งกลาง */
+    text-transform: uppercase; /* แปลงข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของหัวข้อ */
+    margin-top: 20px; /* ระยะห่างด้านล่างของหัวข้อ */
+}
+h2 {
+    color: #333; /* สีของข้อความ */
+    font-size: 36px; /* ขนาดตัวอักษร */
+    text-align: center; /* การจัดวางตำแหน่งข้อความให้อยู่กึ่งกลาง */
+    text-transform: uppercase; /* แปลงข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของหัวข้อ */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+} */
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #464748;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+.order-summary, .payment-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-summary ul {
+    list-style: none;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.payment-form button {
+    background-color: #333;
+    color: #fff;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block; /* ทำให้ปุ่มเต็มความกว้างของ .payment-form */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-form a {
+    text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+}
+
+
+
+/* Button styles */
+.final-submit {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#final-submit:hover {
+    background-color: #242524;
+}
+
+/* Image styles */
+#qr {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    border: 2px solid #ddd; /* Adds a border around the image */
+    border-radius: 5px; /* Adds rounded corners to the border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+.pricing-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.pricing-table th, .pricing-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart1 {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    border: 2px solid #ddd; /* Adds a border around the image */
+    border-radius: 5px; /* Adds rounded corners to the border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+.cart-item,
+.form-check,
+#cart1,
+.cart-item-info,
+.quantity,
+.decrease-button,
+.increase-button {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.decrease-button:hover,
+.increase-button:hover {
+    background-color: #555;
+}
+
+/* ปรับแต่งสไตล์ของตัวเลข */
+.quantity {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+/* ปรับแต่งสไตล์ของปุ่มลดจำนวนเมื่อมีการกด */
+.decrease-button:active {
+    background-color: #111;
+}
+
+/* ปรับแต่งสไตล์ของปุ่มเพิ่มจำนวนเมื่อมีการกด */
+.increase-button:active {
+    background-color: #111;
+}
+
+.form-check-input {
+    float: left;
+    margin-right: 50px;
+}
+  
+.cart-item-info {
+    float: right;
+    display: flex;
+    align-items: center;
+    
+}
+  
+.quantity, .decrease-button, .increase-button, .price {
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+}
+.decrease-button, .increase-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 3px 8px; /* ปรับ padding ตามต้องการ */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 2000px; /* ลดความกว้างเป็นตัวเลขหรือค่าที่ต้องการ */
+}
+
+#cart1 {
+    max-width: 30%;
+    height: auto;
+    display: block; /* Ensures the image is displayed as a block element */
+    margin-left: 100px; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    border: 2px solid #ddd; /* Adds a border around the image */
+    border-radius: 5px; /* Adds rounded corners to the border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+.price {
+    display: none;
+}
+
+#de-button {
+    display: inline-block; /* กำหนดให้ปุ่มแสดงเป็น inline-block เพื่อให้ margin ทำงานได้ */
+    width: 30px;
+    margin-right: 20px; /* กำหนดระยะห่างด้านขวาของปุ่ม */
+}
+#in-button {
+    display: inline-block; /* กำหนดให้ปุ่มแสดงเป็น inline-block เพื่อให้ margin ทำงานได้ */
+    width: 30px;
+    margin-left: 0px;
+}

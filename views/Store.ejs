@@ -1,0 +1,114 @@
+<%- include('partials/head_slider.ejs') %>
+
+
+<%- include('partials/nav.ejs') %>
+<div id="carouselExampleInterval" class="carousel slide"
+    data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <% for(let i = 0; i < images.length; i++) { %>
+        <div class="carousel-item <%= i === 0 ? 'active' : '' %>"
+            data-bs-interval="<%= i === 0 ? '10000' : '2000' %>">
+            <img src="/img/Proim/shirt/<%= images[i] %>"
+                class="d-block w-100 imgsl" alt="<%= images[i] %>">
+        </div>
+        <% } %>
+    </div>
+    <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+ 
+
+
+<div class="container">
+    <div class="sidebar">
+        <input onkeyup="searchsomething(this)" id="txt_search"type="text" class="sidebar-search"
+            placeholder="SEARCH">
+        <a onclick="searchproduct('all')" class="sidebar-items">
+            All
+        </a>
+        <a  onclick="searchproduct('shirt')" class="sidebar-items">
+            Shirt
+        </a>
+        <a  onclick="searchproduct('pant')" class="sidebar-items">
+            Pant
+        </a>
+        <a  onclick="searchproduct('hat')" class="sidebar-items">
+            Hat
+        </a>
+        <a  onclick="searchproduct('bag')" class="sidebar-items">
+            Bag
+        </a>
+        <a  onclick="searchproduct('necklace')" class="sidebar-items">
+            Necklace
+        </a>
+    </div>
+
+    <div class="product" id="productlist">
+        
+    
+    </div>
+</div>
+
+<div id="modelDesc" class="model" style="display: none;">
+    <div onclick="closeModel()"  class="model-bg"></div>
+    <div class="model-page">
+        <h2 class="detailmodel">Detail</h2>
+        <div class="model-content">
+            <img id="mdd-img" class="modeldesc-img"
+                src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt>
+            <div class="modeldesc-detail">
+                <p id="mdd-name" class="Pdname"></p>
+                <p id="mdd-price" class="Price"></p>
+                <p id="mdd-desc" class="pddetails"></p>
+                <div class="btn-control">
+                    <button onclick="closeModel()" class="btn1">
+                        Close
+                    </button>
+                    <button onclick="addtocart()" class="btn1 btn-buy" >
+                        Add to cart
+                    </button>
+                    <a href="/Editproduct" style="display: none;">
+                        <button class="btn1 btn-buy">
+                            Edit
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modelCart" class="model" style="display: none;">
+    <div onclick="closeModel()" class="model-bg"></div>
+    <div class="model-page">
+        <h2 class="detailmodel">My Cart</h2>
+        <div id="mycart" class="cartlist">
+        
+        </div>
+        <div class="btn-control">
+                <button onclick="closeModel()" class="btn1">
+                    Cancel
+                </button>
+                <a href="/purchase">
+                <button class="btn1 btn-buy">
+                    Buy
+                </button>
+                </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<%- include('partials/footer.ejs') %>

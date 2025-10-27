@@ -1,0 +1,64 @@
+<%- include('partials/head_edit.ejs') %>
+
+
+<%- include('partials/nav.ejs') %>
+
+
+<main>
+  <section class="profile">
+    
+
+    <div class="form-group">
+      <h2 class="h2" id="h21">ข้อมูลส่วนตัว</h2>
+      <div class="form-row">
+        <label for="name" id="name1">ชื่อ : </label>
+        <input type="text" name="name" id="name">
+        <label for="midname">ชื่อกลาง : </label>
+        <input type="text" name="midname" id="midname">
+        <label for="surname" >นามสกุล : </label>
+        <input type="text" name="surname" id="surname">
+      </div>
+        <div class="form-row">
+          <label for="user-name">User Name : </label>
+          <input type="text" name="user-name" id="user-name">
+          <label for="tel-phone">เบอร์โทรศัพท์ :</label>
+          <input type="text" name="tel-phone" id="tel-phone">
+        </div>
+        <div class="form-row">
+          <label for="email">อีเมล : </label> 
+          <input type="text" name="email" id="email">
+          <label for="sex" id="sex1">เพศ : </label>
+        <select id="sex" name="sex">
+          <option value="ex">เลือกเพศ</option>
+          <option value="1">ชาย</option>
+          <option value="2">หญิง</option>
+          <option value="3">LGBTQ+</option>
+      </select>
+        
+      <h2 class="h2" id="h22">ที่อยู่</h2>
+        
+          <label for="province">จังหวัด : </label>
+          <input type="text" name="province" id="province">
+          <label for="street">ถนน : </label>
+          <input type="text" name="street" id="street">
+          <label for="zipcode">รหัสไปรษณีย์ : </label>
+          <input type="text" name="zipcode" id="zipcode">
+        
+        <div class="form-row2" id="form-row2">
+          <label for="district">อำเภอ : </label>
+          <input type="text" name="district" id="district">
+          <label for="about">ที่อยู่ : </label>
+          <input type="text" name="about" id="about">
+        </div>
+          <a href=""><button type="config" id="config">ยืนยันการแก้ไข</button></a>
+            
+        
+      </div>
+    </div>
+
+    
+      
+  </section>
+</main>
+
+<%- include('partials/footer.ejs') %>

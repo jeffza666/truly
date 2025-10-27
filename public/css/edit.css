@@ -1,0 +1,117 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 4vw;
+}
+
+.profile {
+display: flex;
+align-items: center;
+margin: 20px;
+}
+
+.profile-picture img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+
+}
+
+h2 {
+    margin-left: 80px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#h22 {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#h21 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#pic {
+    display: block; /* ทำให้ปุ่มเต็มความกว้างของ .payment-form */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #464748;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* ทำให้ปุ่มเต็มความกว้างของ .payment-form */
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none; 
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+button#config {
+    text-decoration: none; /* เอาเส้นใต้ออก */
+}
+
+
+input,
+select {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    background-color: #F5F5F5; 
+    border: 1px solid #F5F5F5;
+}
+
+#Reason {
+    background-color: #F5F5F5; 
+    border: 1px solid #F5F5F5;
+    margin-left: 150px;
+    width: 55%;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.form-row2 {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+.select-row {
+    width: 100%;
+}
+
+#sex1 {
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+}

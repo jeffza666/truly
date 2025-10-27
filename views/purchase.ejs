@@ -1,0 +1,97 @@
+<%- include('partials/head_purchase.ejs') %>
+
+
+<%- include('partials/nav.ejs') %>
+
+<h1>ชำระเงิน</h1>
+<main>
+    <section class="payment-form">
+        <h2>ที่อยู่การจัดส่ง</h2>
+        <ul>
+            <li>ชื่อ: ณรัฐพัฒน์ แสนศิริทวีสุข</li>
+            <li>เบอร์โทร: 083-7435132</li>
+            <li>ที่อยู่: U House มธ ห้อง 819, 69/9 ต.คลองหนึ่ง
+                , อ.คลองหลวง, จ.ปทุมธานี, 12120
+            </li>
+        </ul>
+        <a href="#">
+            <button type="submit">แก้ไข</button>
+        </a>
+    </section>
+</main>
+
+<main>
+    <section class="payment-form">
+        <h2>รายการสินค้า</h2>
+        <div class="form-check">
+            <article class="cart-item">
+                <div class="cart-item-info">
+                <span class="quantity">1</span>
+                <img src="/img/home1.jpg" alt="shirt" id="cart1">
+                <button class="decrease-button" id="de-button">-</button>
+                <button class="increase-button" id="in-button">+</button>
+                <span class="price">690</span>
+            </div>
+            </article>
+        </div>
+        
+        <table class="pricing-table">
+            <tr>
+                <th>จำนวนรวม</th>
+                <th>1</th>
+                <th>ชิ้น</th>
+            </tr>
+            <tr>
+                <td>ราคา</td>
+                <td>690</td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+                <td>ค่าจัดส่ง</td>
+                <td>50</td>
+                <td>บาท</td>
+            </tr>
+            <tr>
+                <td>รวมทั้งสิ้น</td>
+                <td><section class="cart-total">
+                    <span class="total-price">฿740.00</span>
+                </section>
+                </td>
+                <td>บาท</td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+ <main>
+    <section class="how-purchase">
+        <section class="payment-form">
+            <h2>Credit Card</h2>
+            <form id="payment-form">
+                <label for="name">Name on Card:</label>
+                <input type="text" id="name" required>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="text" id="expiration-date" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </section>
+</main> 
+
+<main>
+    <section class="payment-form">
+        <h2>สลิปการโอนเงิน</h2>
+        <img src="/img/qr.jpg" alt="qr" id="qr">
+        <p>สลิปการโอนเงิน (หากชำระผ่านบัญชีธนาคาร)</p>
+        <input type="file" name="slip">
+        <a href="#">
+            <button type="submit" id="final-submit">สั่งสินค้า</button>
+        </a>
+    </section>
+</main>
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000;
+}
+nav {
+    position: fixed;
+    padding: 25px 60px;
+    z-index: 1;
+}
+
+nav a img {
+    width: 167px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1529720317453-c8da503f2051?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+}
+select{
+    margin-left: 10px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 70px;
+    width: 60%;
+    background: #F5F5F5; /* เปลี่ยนสีพื้นหลังเป็นสีขาว */
+    height: 65%;
+}
+
+
+.form-wrapper h2 {
+    color: #000000;
+    font-size: 2rem;
+}
+
+.form-wrapper form {
+    margin: 25px 0 0;
+}
+
+form .form-control {
+    height: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-control input {
+    height: 50px;
+    width: 300px;
+    background: #F5F5F5;
+    border: 1px solid #ccc; /* เพิ่ม border ให้กับ input */
+    outline: none;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 1rem;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #464748;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #000000;
+}
+
+#gender {
+    margin-left: 10px;
+}
+
+select {
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* เพิ่ม border ให้กับ input */
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #F5F5F5;
+    color: rgb(118, 117, 117);
+}
+
+.form-control input[type="file"] {
+    height: 40px;
+    width: 300px;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer; 
+}
+    h3{
+        color: #000000;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    }
+

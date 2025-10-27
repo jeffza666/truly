@@ -1,0 +1,40 @@
+<%- include('partials/head_rg.ejs') %>
+<nav>
+    <a href="/"><img src="img/nav/TL.png" alt="logo"></a>
+</nav>
+<div class="form-wrapper">
+    <h2>Sign Up</h2>
+    <form action="#">
+        <div class="form-control">
+            <input type="text" name="firstname" required placeholder="ชื่อ">
+            <input type="text" name="middlename" placeholder="ชื่อกลาง">
+            <input type="text" name="lastname" placeholder="นามสกุล">
+        </div>
+        <div class="form-control">
+            <select id="gender" name="gender">
+                <option value="0">เพศ</option>
+                <option value="M">ชาย</option>
+                <option value="F">หญิง</option>
+                <option value="O">LGBTQ+</option>
+            <input type="email" id="email" name="email" required
+                placeholder="อีเมล">
+            </select>
+            <input type="text" name="province" required placeholder="เบอร์โทร">
+        </div>
+        <div class="form-control">
+            <input type="text" name="province" required placeholder="จังหวัด">
+            <input type="text" name="street" required placeholder="ถนน">
+            <input type="text" name="zipcode" required placeholder="รหัสไปรษณีย์">
+        </div>
+        <div class="form-control">
+            <input type="text" name="district" required placeholder="อำเภอ">
+            <input type="text" name="about" required placeholder="ที่อยู่">
+        </div>
+        <div class="form-control">
+            <input type="text" name="username" required placeholder= "Username">
+            <input type="password" name="password" required placeholder="Password" minlength="8" maxlength="20">
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+<%- include('partials/footer.ejs') %>

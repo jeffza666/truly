@@ -1,0 +1,68 @@
+footer {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.social-media {
+    display: flex; /* หรือ display: grid; ขึ้นอยู่กับวิธีการจัดวางที่คุณต้องการ */
+    justify-content: center; /* จัดให้ส่วนของ social media อยู่ตรงกลาง */
+    margin-left: 20px;
+}
+
+.social-media-link {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-media-link insta
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ให้ Header มีความสูงเท่ากับความสูงของหน้าจอ */
+}
+
+/* 1 */
+.ig, .facebook, .line {
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+    width: 50px; /* เพิ่มความกว้างตามที่ต้องการ */
+    height: 50px; /* เพิ่มความสูงตามที่ต้องการ */
+    display: flex; /* ทำให้เนื้อหาภายในปรับตำแหน่งกลาง */
+    justify-content: center; /* จัดเนื้อหาให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลางตามแนวตั้ง */
+    border-radius: 50%; /* ทำให้มีรูปร่างเป็นวงกลม */
+    text-decoration: none;
+}
+footer {
+    background-color: transparent; /* หรือ background-color: none; */
+    background-image: none;
+}
+
+
+
+
+
+
+

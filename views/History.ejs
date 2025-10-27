@@ -1,0 +1,56 @@
+<%- include('partials/head_his.ejs') %>
+
+<%- include('partials/nav.ejs') %>
+<div class="wrap container">
+    <h1>Purchase history</h1>
+    <div class="wrap-item">
+        <div class="item">
+            <div class="left">
+                <img class="img-product"
+                    src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt>
+                <div class="details">
+                    <p class="head">Jumpman</p>
+                    <p class="state">Price : 1200 </p>
+                    <p class="ddt">Size : XL</p>
+                    <p class="count">x1</p>
+                    <p class="state">TrackID : EB206220243TH</p>
+                    <p class="state">DATE : 27 / 3 / 2024</p>
+                    <p class="state">Payment methods : โอนจ่าย </p>
+                    <p class="state">Logistic : Kerry</p>
+                    <p class="state">Logistic cost : 35 </p>
+                </div>
+            </div>
+            <div class="right">
+                <p>1,235 THB</p>
+            </div>
+        </div>
+        <div class="wrap-review">
+            <div>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="review">Review:</label>
+                        <textarea class="form-control" id="review" rows="3" placeholder="กรุณากรอกคำรีวิวของคุณที่นี่..."></textarea>
+                        <h4>Upload Picture</h4>
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <div class="rating-box">
+                            <header>How was your experience?</header>
+                            <div class="stars">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark">ส่งรีวิว</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

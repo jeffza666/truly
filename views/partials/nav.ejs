@@ -1,0 +1,38 @@
+<nav id="navbar-fixed" class="mynav">
+    <div class="nav-container">
+        <a href="/" >
+            <img src="/img/nav/TL.png" class="logonav" alt="logo">
+        </a>
+        <div class="nav-profile" >
+            <a href="/comment"  >
+                <i class="fa-solid fa-star"></i>
+            </a>
+            <a href="/store" >
+                <i class="fa-brands fa-product-hunt"></i>
+            </a>
+            <a href="/AddnewProduct" style="display: none;">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+            <a href="/login" class="log" style="display: none;">
+                <p>SIGN IN</p>
+            </a>
+            <a href="/Register" class="log" style="display: none;">
+                <p class="log">SIGN UP</p>
+            </a>
+            <div class="dropdown" >
+                <i class="fa-solid fa-user dropdown-toggle" id="userDropdown"></i>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="/information">Profile</a>
+                    <a class="dropdown-item" href="/history">History</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/">Logout</a>
+                </div>
+            </div>
+            <div onclick="opencart()" class="nav-profile-cart">
+                <i class="fas fa-cart-shopping"></i>
+                <div id="cartcount" class="cartcount" style="display: none;">                  
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

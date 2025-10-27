@@ -1,0 +1,32 @@
+<%- include('partials/head_editpro.ejs') %>
+
+
+<nav>
+    <a href="/"><img src="/img/nav/TL.png" alt="logo"></a>
+</nav>
+<div class="form-wrapper">
+    <h2>EditProduct : Life</h2>
+    <form action="/store" method="post" id="#sub">
+        <div class="form-control">
+            <input type="text" name="ProductName" required placeholder="ProductName">
+            <input type="text" name="Price" placeholder="Price">
+            <input type="text" name="Desc" placeholder="Description">
+        </div>
+        <div class="form-control">
+            <h3>Upload Picture</h3>
+            <input type="file" id="image" name="image" accept="image/*">
+        </div>
+        <button type="submit" id="subnewp">Edit</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 4vw;
+}
+
+.profile {
+display: flex;
+align-items: center;
+margin: 20px;
+}
+
+.profile-picture img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+
+}
+
+.h2 {
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+label {
+    margin-right: auto;
+    margin-left: 50px;
+
+}
+
+.form-row label {
+    display: block; /* ทำให้ label เป็น block element เพื่อให้สามารถกำหนด margin ได้ */
+    margin-bottom: 8px; /* เพิ่มระยะห่างด้านล่างของแต่ละ label */
+  }
+  .form-row .sub-label {
+    margin-left: 20px; /* กำหนดระยะห่างด้านซ้ายของ sub-label */
+  }
+
+.form-group {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-group-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pic {
+    display: block; /* ทำให้ปุ่มเต็มความกว้างของ .payment-form */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* ขนาดและสีของข้อความ */
+label {
+    font-size: 20px;
+}
+
+/* label[for="surname"] {
+    margin-left: 200px;
+}
+
+label[for="user-id"] {
+    margin-left: 110px;
+}
+
+label[for="email"] {
+    margin-left: 65px;
+}
+
+label[for="sex"] {
+    margin-bottom: 25px;
+} */
+
+button {
+    padding: 10px 20px;
+    background-color: #464748;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* ทำให้ปุ่มเต็มความกว้างของ .payment-form */
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none; 
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+button#config {
+    text-decoration: none; /* เอาเส้นใต้ออก */
+}
+a{
+    text-decoration: none;
+}
