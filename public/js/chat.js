@@ -1,5 +1,6 @@
 (function connect() {
-    let socket = io.connect("http://localhost:3000")
+    // Connect to the server that served this page (any host or port).
+    let socket = io()
 
     let username = document.querySelector('#username');
     let usernameBtn = document.querySelector('#usernameBtn');

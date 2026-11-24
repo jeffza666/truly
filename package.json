@@ -1,9 +1,10 @@
 {
   "name": "251-pj_group",
   "version": "1.0.0",
-  "description": "",
+  "description": "Truly, an e-commerce web app for the CS251 course at Thammasat University.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

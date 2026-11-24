@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const socketio = require("socket.io");
 const app = express();
 
@@ -27,8 +28,8 @@ app.get('/Store', (req, res) => {
     //const { id } = req.params;
     //const comment = comments.find( c => c.id === id)
     //res.render('comments/show', { comment })
-    const fs = require('fs');
-    const imageFiles = fs.readdirSync('public/img/Proim/shirt');
+    const imageDir = path.join(__dirname, 'public', 'img', 'Proim', 'shirt');
+    const imageFiles = fs.readdirSync(imageDir);
     res.render('Store', { images: imageFiles });
 });
 
